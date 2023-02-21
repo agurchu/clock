@@ -8,7 +8,7 @@ function updateClock() {
   const hour = currentDate.getHours();
   const minute = currentDate.getMinutes();
   const second = currentDate.getSeconds();
-  const hourDeg = (hour / 60 / 12) * 360;
+  const hourDeg = (hour / 12) * 360;
   const minuteDeg = (minute / 60) * 360;
   const secondDeg = (second / 60) * 360;
   hourEl.style.transform = `rotate(${hourDeg}deg)`;
